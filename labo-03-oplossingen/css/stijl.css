@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #282827;
+}
+
+.labo-nav {
+    background: #111;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.labo-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.labo-nav a:hover,
+.labo-nav a:focus {
+    text-decoration: underline;
+}
+
+.labo-nav .home {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+main {
+    max-width: 55rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+li {
+    margin: 1rem 0;
+}

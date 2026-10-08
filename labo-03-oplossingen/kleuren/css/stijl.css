@@ -1,0 +1,81 @@
+/* stijl.css - labo 3, kleuren */
+:root {
+  --tomato: tomato;
+  --orangered: orangered;
+  --coral: coral;
+  --lightsalmon: lightsalmon;
+  --darkorange: darkorange;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.tomato { background-color: var(--tomato); }
+.orangered { background-color: var(--orangered); }
+.coral { background-color: var(--coral); }
+.lightsalmon { background-color: var(--lightsalmon); }
+.darkorange { background-color: var(--darkorange); }
+
+li h2 {
+  letter-spacing: 0.25rem;
+}
+
+.codes {
+  margin-top: 0.75rem;
+}
+
+.codes span {
+  margin: 0 0.35rem;
+}
+
+.labo-nav {
+  position: relative;
+  z-index: 1000;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.labo-nav a {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.labo-nav a:hover,
+.labo-nav a:focus {
+  text-decoration: underline;
+}
+
+.labo-nav .home {
+  font-weight: bold;
+}

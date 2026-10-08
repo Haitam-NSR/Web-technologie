@@ -1,0 +1,85 @@
+/* stijl.css - labo 3, slogan */
+:root {
+  --tekst: #282827;
+  --geel: #fccc00;
+  --zwart: #000000;
+  --donkergrijs: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--tekst);
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  margin: 14rem auto 0;
+  font-size: 2.5rem;
+ 
+}
+
+h2 span {
+  display: inline-block;
+  border-bottom: 0.45rem solid var(--geel);
+  border-radius: 0 0 1rem 1rem;
+
+}
+
+p {
+  width: 40rem;
+  max-width: calc(100% - 2rem);
+  margin: 0.75rem auto 0;
+}
+
+a {
+  display: block;
+  width: max-content;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--zwart);
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-color: var(--donkergrijs);
+}
+
+.labo-nav {
+  position: relative;
+  z-index: 1000;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.labo-nav a {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.labo-nav a:hover,
+.labo-nav a:focus {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.labo-nav .home {
+  font-weight: bold;
+}

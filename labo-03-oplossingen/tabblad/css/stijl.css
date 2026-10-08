@@ -1,0 +1,70 @@
+/* stijl.css - labo 3, tabblad */
+:root {
+  --achtergrond: #ff816f;
+  --tabblad: #ffd500;
+  --wit: #ffffff;
+  --zwart: #000000;
+}
+
+body {
+  min-height: 100vh;
+  padding: 5rem;
+  background-color: var(--achtergrond);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  position: relative;
+  width: 15rem;
+  padding: 1rem;
+  background-color: var(--tabblad);
+  border: 0.25rem solid var(--zwart);
+  border-bottom: 0;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+h2 {
+  width: 35rem;
+  padding: 1.25rem;
+  background-color: var(--wit);
+  border: 0.25rem solid var(--zwart);
+  box-shadow: 0.5rem 0.5rem 0 var(--zwart), -0.5rem 0.5rem 0 var(--zwart);
+  font-size: 1.5rem;
+}
+
+.labo-nav {
+  position: relative;
+  z-index: 1000;
+  margin: -5rem -5rem 5rem;
+  min-height: 3.5rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.labo-nav a {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.labo-nav a:hover,
+.labo-nav a:focus {
+  text-decoration: underline;
+}
+
+.labo-nav .home {
+  font-weight: bold;
+}
